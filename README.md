@@ -1,24 +1,18 @@
-# README
+# E-Commerce Rails App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A fullstack E-Commerce application built with **Ruby on Rails 7**, **Hotwire**, **Tailwind CSS**, **Stripe**, and **PostgreSQL**.
 
-Things you may want to cover:
+This project aims to provide a modern and responsive shopping experience using Rails' latest tools for both developers and users.
 
-* Ruby version
+---
 
-* System dependencies
+## 🚀 Tech Stack
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- **Ruby**: 3.x  
+- **Rails**: 7.x  
+- **Database**: PostgreSQL  
+- **CSS Framework**: Tailwind CSS  
+- **Real-Time Updates**: Hotwire (Turbo + Stimulus)  
+- **Payments**: Stripe  
+- **Testing**: RSpec + FactoryBot  
+- **CI/CD**: GitHub Actions
