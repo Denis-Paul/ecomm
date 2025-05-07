@@ -1,27 +1,27 @@
 class Admin::StocksController < AdminController
     before_action :set_admin_stock, only: %i[ show edit update destroy ]
-  
+
     # GET /admin/stocks or /admin/stocks.json
     def index
       @admin_stocks = Stock.where(product_id: params[:product_id])
     end
-  
+
     # GET /admin/stocks/1 or /admin/stocks/1.json
     def show
     end
-  
+
     # GET /admin/stocks/new
     def new
       @product = Product.find(params[:product_id])
       @admin_stock = Stock.new
     end
-  
+
     # GET /admin/stocks/1/edit
     def edit
       @product = Product.find(params[:product_id])
       @admin_stock = Stock.find(params[:id])
     end
-  
+
     # POST /admin/stocks or /admin/stocks.json
     def create
       @product = Product.find(params[:product_id])
@@ -37,7 +37,7 @@ class Admin::StocksController < AdminController
         end
       end
     end
-  
+
     # PATCH/PUT /admin/stocks/1 or /admin/stocks/1.json
     def update
       respond_to do |format|
@@ -50,7 +50,7 @@ class Admin::StocksController < AdminController
         end
       end
     end
-  
+
     # DELETE /admin/stocks/1 or /admin/stocks/1.json
     def destroy
       @admin_stock.destroy!
@@ -60,7 +60,7 @@ class Admin::StocksController < AdminController
         format.json { head :no_content }
       end
     end
-  
+
     private
       # Use callbacks to share common setup or constraints between actions.
       def set_admin_stock
