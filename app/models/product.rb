@@ -9,4 +9,5 @@ class Product < ApplicationRecord
   end
 
   belongs_to :category
+  has_many :stocks
 end
