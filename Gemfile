@@ -61,5 +61,5 @@ end
 
 gem "devise", "~> 4.9"
 gem "font-awesome-sass", "~> 6.5.1"
-gem "rspec-rails", "~> 7.1", groups: [ :development, :test ]
+gem "rspec-rails", "~> 8.0", groups: [ :development, :test ]
 gem "pagy", "~> 6.2"
